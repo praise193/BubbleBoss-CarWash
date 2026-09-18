@@ -1,0 +1,178 @@
+/* BUBBLEBOSS CARWASH - style.css - Fast Load */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, Arial, sans-serif;
+}
+
+body {
+  background: #f6f7f9;
+  color: #111;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  letter-spacing: -0.5px;
+}
+
+/* Main Card */
+.card {
+  max-width: 400px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+}
+
+/* Calendar Header */
+.cal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.cal-header button {
+  background: black;
+  color: white;
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#monthLabel {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+/* Calendar Grid */
+.cal-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+}
+
+.cal-grid div {
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f1f3f5;
+  border-radius: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.cal-grid div.off {
+  background: transparent;
+  pointer-events: none;
+}
+
+.cal-grid div.sel {
+  background: black;
+  color: white;
+}
+
+/* Time Slots */
+.times {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 10px 0 15px 0;
+}
+
+.times button {
+  padding: 8px 14px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  background: white;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.times button.active {
+  background: black;
+  color: white;
+  border-color: black;
+}
+
+label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #555;
+  margin-top: 12px;
+  display: block;
+}
+
+#chosenDate {
+  color: black;
+  font-weight: 700;
+}
+
+select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  margin-top: 6px;
+  font-size: 14px;
+  background: white;
+}
+
+body{
+    font-family:Arial;
+    background:rgb(250, 246, 246);
+    color:white;
+    padding:20px;
+    margin:0}
+
+.card{
+    max-width:420px;
+    margin:30px auto;
+    background:white;
+    color:#111;
+    border-radius:18px;
+    padding:22px}
+
+h2{
+    text-align:center;
+    color:blue} 
+    label
+    {font-weight:bold;
+        display:block;
+        margin-top:12px;
+        font-size:14px}
+input{
+    width:100%;
+    padding:11px;
+    border-radius:10px;
+    border:1.5px solid grey;
+    margin-top:5px;
+    box-sizing:border-box}
+.btn{width:100%;
+    padding:13px;background:#0ea5e9;
+    color:white;
+    border:none;
+    border-radius:10px;
+    margin-top:18px;
+    font-weight:bold;
+    font-size:16px;
+    cursor:pointer}
+.error{color:red;
+    font-size:13px;
+    margin-top:4px;
+    display:none} 
+
+.link{
+    text-align:center;
+    margin-top:12px;
+    font-size:14px}
