@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BubbleBoss</title>
+</head>
+<body>
+    <h2>BubbleBoss CarWash</h2>
+<div class="card">
+  <div class="cal-header">
+    <button onclick="changeMonth(-1)" ><</button>
+    <span id="monthLabel"></span>
+    <button onclick="changeMonth(1)" >></button>
+  </div>
+  <div class="cal-grid" id="cal"></div>
+
+  <label>Available Time: <span id="chosenDate" ></span></label>
+  <div class="times" id="timeSlots"></div>
+
+  <label>Service</label>
+  <select id="service"><option>Basic Wash R120 - 20min</option><option>Premium + Wax R250</option><option>Full Interior R350</option></select>
+
+  <button onclick="confirmBooking()">Confirm Booking</button>
+  <p id="msg" de;text-align:center"></p>
+</div>
+</body>
+</html>
