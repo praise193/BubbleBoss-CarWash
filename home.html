@@ -9,20 +9,39 @@
 <body>
 
   <!-- TOP BAR -->
-  <div class="top-bar">
-    <div class="logo"><span>Bubble</span>Boss</div>
-    <div class="top-info">
-      <div><span class="icon">🕒</span><div><b>Opening Hour</b><p>Mon - Fri, 8:00 a.m - 9:00 p.m </p></div></div>
-      <div><span class="icon">📞</span><div><b>Call Us</b><p>+27 11 123 456</p></div></div>
-      <div><span class="icon">✉️</span><div><b>Email Us</b><p>bubbleboss@carwash.ac.za</p></div></div>
+<!-- TOP INFO BAR - FIXED WITH INLINE COLORS -->
+<div class="top-bar" style="background:white; display:flex; justify-content:space-between; padding:15px 5%;">
+  <div class="logo" style="color:#0096ff; font-weight:800; font-size:28px;">Bubble<span style="color:#0a1931;">Boss</span></div>
+  
+  <div class="top-info" style="display:flex; gap:40px;">
+    <div class="info-item" style="display:flex; align-items:center; gap:10px;">
+      <div class="icon-circle" style="width:40px; height:40px; background:#0a1931; border-radius:50%; display:flex; align-items:center; justify-content:center; color:white;">🕒</div>
+      <div>
+        <strong style="color:#0a1931 ; display:block;">Opening Hours</strong>
+        <p style="color:#333 ; margin:0;">Mon - Fri, 8:00 a.m - 9:00 p.m</p>
+      </div>
+    </div>
+    <div class="info-item" style="display:flex; align-items:center; gap:10px;">
+      <div class="icon-circle" style="width:40px; height:40px; background:#0a1931; border-radius:50%; display:flex; align-items:center; justify-content:center; color:white;">📞</div>
+      <div>
+        <strong style="color:#0a1931; display:block;">Call Us</strong>
+        <p style="color:#333 ; margin:0;">+27 11 123 456</p>
+      </div>
+    </div>
+    <div class="info-item" style="display:flex; align-items:center; gap:10px;">
+      <div class="icon-circle" style="width:40px; height:40px; background:#0a1931; border-radius:50%; display:flex; align-items:center; justify-content:center; color:white;">✉️</div>
+      <div>
+        <strong style="color:#0a1931 ; display:block;">Email Us</strong>
+        <p style="color:#333 ; margin:0;">bubbleboss@carwash.ac.za</p>
+      </div>
     </div>
   </div>
-
+</div>
   <!-- NAVBAR -->
   <nav class="navbar">
     <div class="nav-links">
       <a href="home.html">Home</a>
-      <a href="#service">Service</a>
+      <a href="Service.html">Service</a>
       <a href="#price">Price</a>
       <a href="bookings.html">Bookings</a>
       <a href="#contact">Contact</a>
@@ -72,8 +91,8 @@ Our comprehensive car detailing services go beyond surface cleaning. We focus on
   <div style="width:23%;">
     <h3>Popular Links</h3>
     <a href="home.html"><p>About Us</a></p>
-    <p> Contact Us</p>
-    <p> Our Service</p>
+  <a href="Service.html"><p>Services</p></a>
+     <p> Contact Us</p>
     <p> Bookings</p>
   </div>
 
