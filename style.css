@@ -401,3 +401,24 @@ body { background:#fff; }
   font-size: 14px;
   color: #333;
 }
+
+footer a,
+.footer a,
+.Popular-links a,
+.Useful-links a,
+div[class*="Popular"] a,
+div[class*="Useful"] a {
+  color: white ;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 6px;
+}
+
+footer a:hover,
+.footer a:hover,
+.Popular-links a:hover,
+.Useful-links a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+  cursor: pointer;
+}

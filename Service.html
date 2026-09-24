@@ -34,19 +34,17 @@
   </div>
 </div>
 
+<nav class="navbar" style="background: 0a1931; display: flex; position: sticky; top: 0; z-index: 1000; padding: 15px 5%;">
+    <div class="nav-links">
+      <a href="home.html">Home</a>
+      <a href="Service.html">Service</a>
+      <a href="#price">Price</a>
+      <a href="bookings.html">Bookings</a>
+      <a href="Contact.html">Contact</a>
+    </div>
+    <a href="bookings.html" class="btn-appointment">Get Appointment</a>
+  </nav>
 
-<!-- BLUE NAVBAR -->
-<nav class="main-nav">
-  <ul class="nav-links">
-    <li><a href="home.html">Home</a></li>
-    <li><a href="Service.html">Service</a></li>
-    <li><a href="#pricing">Price</a></li>
-    <li><a href="bookings.html">Bookings</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-  <a href="bookings.html" class="appointment-btn">Get Appointment</a>
-</nav>
-<!-- PREMIUM WASHING SERVICES - FINAL EXACT VERSION -->
 <section style="padding:70px 5%; background:white; text-align:center;">
   <h4 style="color:#0096ff; letter-spacing:4px; font-size:14px; font-weight:700; margin:0;">WHAT WE DO?</h4>
   <div style="width:70px; height:3px; background:#0096ff; margin:8px auto 15px auto;"></div>
@@ -105,50 +103,115 @@
   </div>
 </section>
 
-
-
-
-
-
-
-
-<footer style="background:#0096ff; color:white; display:flex; flex-direction:row; justify-content:space-between; padding:50px; width:100%; box-sizing:border-box;">
-
-  <div style="width:23%;">
-    <h3>Get In Touch Across Multiple Branches</h3>
-    <p>📍 Midrand, Brynston, Sandton</p>
-    <p>📞 +27 11 123 456</p>
-    <p>✉️ bubbleboss@carwash.ac.za</p>
+<footer class="main-footer">
+  <div class="footer-col">
+    <h3>Get In Touch With Us at Our multiple Branches Across S.A</h3>
+    <p>📍  Midrand, Sandton, Fourways</p>
+    <p>📞 +27 11 234 5678</p>
+    <p>✉️ bubbleboss@carwash.co.za</p>
   </div>
 
-  <div style="width:23%;">
+  <div class="footer-col">
     <h3>Popular Links</h3>
-    <a href="home.html"><p>About Us</a></p>
-    <a href="Service.html"><p>Service</p></a>
-    <p> Contact Us</p>
-    <p> Bookings</p>
+    <a href="home.html">About Us</a>
+    <a href="Contact.html">Contact Us</a>
+    <a href="Service.html">Our Service</a>
+    <a href="#">Pricing</a>
   </div>
 
-  <div style="width:23%;">
+  <div class="footer-col">
     <h3>Useful Links</h3>
-    <p> Terms of use</p>
-    <p> Privacy policy</p>
-    <p> Cookies</p>
-    <p> Help</p>
-    <p> FAQs</p>
+    <a href="#">Terms of use</a>
+    <a href="#">Privacy policy</a>
+    <a href="#">Help</a>
+    <a href="#">FAQs</a>
   </div>
 
-  <div style="width:23%;">
+  <div class="footer-col newsletter-col">
     <h3>Newsletter</h3>
-    <input type="text" placeholder="Full Name" style="width:100%; padding:8px; margin-bottom:10px; border-radius:5px; border:1px solid white; background:transparent;">
-    <input type="text" placeholder="Email" style="width:100%; padding:8px; margin-bottom:10px; border-radius:5px; border:1px solid white; background:transparent;">
-    <button style="width:100%; padding:10px; border-radius:20px; border:none; background:white; color:#0096ff; font-weight:bold;">Submit</button>
+    <form id="newsletterForm">
+      <input type="text" id="newsName" placeholder="Name" required>
+      <input type="email" id="newsEmail" placeholder="Email" required>
+      <button type="submit">Submit</button>
+    </form>
+    <p id="newsMessage"></p>
   </div>
+</footer>
+
+<style>
+.main-footer{
+  background:#0096ff;
+  color:white;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start; 
+  gap:40px;
+  padding:60px 5%;
+  font-family: Arial, sans-serif;
+}
+.footer-col{
+  flex:1;
+  min-width:180px;
+}
+.footer-col h3{
+  margin:0 0 20px 0; 
+  font-size:18px;
+  color:white;
+}
+.footer-col p, .footer-col a{
+  color:white;
+  text-decoration:none;
+  display:block;
+  margin-bottom:10px;
+  font-size:14px;
+}
+.footer-col a:hover{
+  text-decoration:underline;
+  color:#ffeb3b;
+}
+.newsletter-col input{
+  width:100%;
+  padding:12px;
+  margin-bottom:10px;
+  border-radius:5px;
+  border:none;
+  outline:none;
+  box-sizing:border-box;
+}
+.newsletter-col button{
+  width:100%;
+  padding:12px;
+  border-radius:25px;
+  border:none;
+  background:white;
+  color:#0096ff;
+  font-weight:bold;
+  cursor:pointer;
+}
+#newsMessage{
+  display:none;
+  margin-top:10px;
+  font-size:13px;
+}
+</style>
+
+<script>
+document.getElementById('newsletterForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  let name = document.getElementById('newsName').value.trim();
+  let email = document.getElementById('newsEmail').value.trim();
+  let msg = document.getElementById('newsMessage');
+  if(name===""){ alert("Enter name"); return; }
+  if(!email.includes("@")){ alert("Enter valid email with @"); return; }
+  msg.style.display="block";
+  msg.innerText="✅ Thanks "+name+"! Subscribed!";
+  document.getElementById('newsName').value="";
+  document.getElementById('newsEmail').value="";
+  setTimeout(()=>msg.style.display="none",3000);
+});
+</script>
 
 
 
-
-
-  
     </body>
 </html>
