@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BubbleBoss - Login</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box; margin:0; padding:0; font-family:'Poppins',sans-serif}
+  body{min-height:100vh; display:flex; flex-direction:column; background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 40%, #2563eb 100%); position:relative;}
+  body::before{content:''; position:fixed; inset:0; background-image: radial-gradient(circle at 10% 20%, rgba(255,255,255,0.12) 0 2px, transparent 3px), radial-gradient(circle at 80% 30%, rgba(255,255,255,0.08) 0 3px, transparent 4px); background-size:400px 400px; pointer-events:none;}
+  header{background:rgba(255,255,255,0.08); backdrop-filter:blur(10px); padding:14px 28px; display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid rgba(255,255,255,0.1);}
+  header .logo{color:white; font-weight:700; font-size:20px}
+  header a{color:#cbd5e1; text-decoration:none; font-size:14px; margin-left:18px}
+  .main{flex:1; display:flex; justify-content:center; align-items:center; padding:30px 16px}
+  .card{background:#fff; width:100%; max-width:420px; border-radius:20px; padding:32px 28px; box-shadow:0 25px 70px rgba(0,0,0,0.35);}
+  .card h2{text-align:center; font-size:22px; margin-bottom:18px; color:#0f172a}
+  .tabs{display:flex; background:#f1f5f9; border-radius:12px; padding:4px; margin-bottom:22px}
+  .tabs button{flex:1; border:none; padding:10px; border-radius:9px; cursor:pointer; font-weight:600; font-size:14px; background:transparent; color:#64748b}
+  .tabs button.active{background:#0f172a; color:white}
+  label{font-size:12px; color:#475569; font-weight:600; display:block; margin:12px 0 6px}
+  input{width:100%; padding:12px 14px; border:1.5px solid #e2e8f0; border-radius:10px; font-size:14px; outline:none}
+  .btn-primary{width:100%; margin-top:18px; padding:12px; border:none; border-radius:10px; background:#0f172a; color:white; font-weight:600; font-size:15px; cursor:pointer}
+  .otp-row{display:flex; gap:8px; margin-top:10px}
+  .otp-row input{text-align:center; font-weight:700}
+  .hidden{display:none}
+  footer{background:#020617; color:#94a3b8; padding:32px 20px; text-align:center;}
+  footer h3{color:white} footer .links{margin:14px 0} footer .links a{color:#60a5fa; text-decoration:none; margin:0 12px; font-size:14px}
+</style>
+</head>
+<body>
+<header><div class="logo">BubbleBoss</div><nav><a href="home.html">Home</a><a href="Service.html">Services</a><a href="Price.html">Pricing</a><a href="Contact.html">Contact</a></nav></header>
+<div class="main"><div class="card">
+<h2 id="formTitle">Create Account</h2>
+<div class="tabs"><button id="tabLogin" onclick="switchTab('login')">Login</button><button id="tabSignup" class="active" onclick="switchTab('signup')">Sign Up</button></div>
+<div id="signupForm"><label>Full Name</label><input type="text" placeholder="John Doe"><label>Email</label><input type="email" placeholder="you@example.com"><label>Phone</label><input type="tel" placeholder="071 123 4567"><label>Password (min 6 chars)</label><input type="password" placeholder="••••••••"><button class="btn-primary" onclick="switchTab('login')">Create Account</button></div>
+<div id="loginForm" class="hidden"><label>Email</label><input type="email" placeholder="you@example.com"><label>Password</label><input type="password" placeholder="••••••••"><button class="btn-primary" onclick="window.location.href='home.html'">Login</button><div style="margin-top:20px; padding-top:18px; border-top:1px dashed #e2e8f0;"><p style="font-size:12px; font-weight:600;">Verify Email - we sent a 6-digit code</p><div class="otp-row"><input maxlength="1"><input maxlength="1"><input maxlength="1"><input maxlength="1"><input maxlength="1"><input maxlength="1"></div><button class="btn-primary" style="background:#2563eb; margin-top:12px;">Verify</button></div></div>
+</div></div>
+<footer><h3>BubbleBoss Car Wash</h3>keep your car newer<p>
+
+</p><div class="links"><a href="home.html">Home</a><a href="Service.html">Services</a><a href="bookings.html">Bookings</a><a href="Contact.html">Contact</a></div><p style="font-size:11px; color:#475569; margin-top:14px;">© 2026 BubbleBoss. All rights reserved.</p></footer>
+<script>
+function switchTab(tab){const login=document.getElementById('loginForm');const signup=document.getElementById('signupForm');const tLogin=document.getElementById('tabLogin');const tSignup=document.getElementById('tabSignup');const title=document.getElementById('formTitle');if(tab==='login'){login.classList.remove('hidden');signup.classList.add('hidden');tLogin.classList.add('active');tSignup.classList.remove('active');title.textContent='Welcome Back';}else{signup.classList.remove('hidden');login.classList.add('hidden');tSignup.classList.add('active');tLogin.classList.remove('active');title.textContent='Create Account';}}
+</script>
+</body>
+</html>
