@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BubbleBoss CarWash</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <!-- TOP BAR -->
+<div class="top-bar" style="background:white; display:flex; justify-content:space-between; padding:15px 5%;">
+  <div class="logo" style="color:#0096ff; font-weight:800; font-size:28px;">Bubble<span style="color:#0a1931;">Boss</span></div>
+  
+  <div class="top-info" style="display:flex; gap:40px;">
+    <div class="info-item" style="display:flex; align-items:center; gap:10px;">
+      <div class="icon-circle" style="width:40px; height:40px; background:#0a1931; border-radius:50%; display:flex; align-items:center; justify-content:center; color:white;">🕒</div>
+      <div>
+        <strong style="color:#0a1931 ; display:block;">Opening Hours</strong>
+        <p style="color:#333 ; margin:0;">Mon - Fri, 8:00 a.m - 9:00 p.m</p>
+      </div>
+    </div>
+    <div class="info-item" style="display:flex; align-items:center; gap:10px;">
+      <div class="icon-circle" style="width:40px; height:40px; background:#0a1931; border-radius:50%; display:flex; align-items:center; justify-content:center; color:white;">📞</div>
+      <div>
+        <strong style="color:#0a1931; display:block;">Call Us</strong>
+        <p style="color:#333 ; margin:0;">+27 11 123 4567</p>
+      </div>
+    </div>
+    <div class="info-item" style="display:flex; align-items:center; gap:10px;">
+      <div class="icon-circle" style="width:40px; height:40px; background:#0a1931; border-radius:50%; display:flex; align-items:center; justify-content:center; color:white;">✉️</div>
+      <div>
+        <strong style="color:#0a1931 ; display:block;">Email Us</strong>
+        <p style="color:#333 ; margin:0;">bubbleboss@carwash.ac.za</p>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- NAVBAR -->
+  <nav class="navbar" style="background: 0a1931; display: flex; position: sticky; top: 0; z-index: 1000; padding: 15px 5%;">
+    <div class="nav-links">
+      <a href="home.html">Home</a>
+      <a href="Service.html">Service</a>
+      <a href="Price.html">Price</a>
+      <a href="bookings.html">Bookings</a>
+      <a href="Contact.html">Contact</a>
+    </div>
+    <a href="bookings.html" class="btn-appointment">Get Appointment</a>
+  </nav>
+
+<section style="padding:60px 5%; text-align:center; background:#ffffff; font-family: Arial, sans-serif;">
+  
+  <p style="color:#007bff; font-weight:700; letter-spacing:3px; font-size:14px; margin:0;">WASHING PLAN</p>
+  <div style="width:60px; height:2px; background:#007bff; margin:8px auto 15px;"></div>
+  <h2 style="font-size:36px; color:#0a1931; margin:0 0 50px; font-weight:800;">Choose Your Plan</h2>
+
+  <div style="display:flex; justify-content:center; align-items:flex-start; gap:30px; flex-wrap:wrap; max-width:1100px; margin:0 auto;">
+
+    <!-- BASIC CLEANING -->
+    <div style="flex:1; min-width:280px; background:white; padding:40px 20px; border-radius:10px;">
+      <h3 style="letter-spacing:2px; font-size:16px; color:#0a1931;">BASIC CLEANING</h3>
+      <h1 style="font-size:52px; margin:10px 0; color:#0a1931;"><span style="font-size:20px; vertical-align:super;">R</span>250<span style="font-size:20px; vertical-align:super; font-weight:400;">.99</span></h1>
+      
+      <div style="text-align:left; display:inline-block; margin:20px 0; color:#555; line-height:35px;">
+        <div>✅ Seats Washing</div>
+        <div>✅ Vacuum Cleaning</div>
+        <div>✅ Exterior Cleaning</div>
+        <div style="color:#aaa;">❌ Interior Wet Cleaning</div>
+        <div style="color:#aaa;">❌ Window Wiping</div>
+      </div>
+      <br>
+      <a href="bookings.html?service=basic" style="color:#0096ff; text-decoration:none; font-weight:600;">Book Now</a>
+    </div>
+
+    <!-- PREMIUM CLEANING - ACTIVE BLUE -->
+    <div style="flex:1; min-width:280px; background:white; padding:40px 20px; border-radius:10px; box-shadow:0 0 30px rgba(0,123,255,0.2); border:1px solid #e6f0ff; transform: scale(1.05);">
+      <h3 style="letter-spacing:2px; font-size:16px; color:#0096ff;">PREMIUM CLEANING</h3>
+      <h1 style="font-size:52px; margin:10px 0; color:#0096ff;"><span style="font-size:20px; vertical-align:super;">R</span>350<span style="font-size:20px; vertical-align:super; font-weight:400;">.99</span></h1>
+      
+      <div style="text-align:left; display:inline-block; margin:20px 0; color:#555; line-height:35px;">
+        <div>✅ Seats Washing</div>
+        <div>✅ Vacuum Cleaning</div>
+        <div>✅ Exterior Cleaning</div>
+        <div>✅ Interior Wet Cleaning</div>
+        <div style="color:#aaa;">❌ Window Wiping</div>
+      </div>
+      <br>
+      <a href="bookings.html?service=premium" style="background:#0096ff; color:white; padding:12px 30px; border-radius:25px; text-decoration:none; font-weight:600; display:inline-block;">Book Now</a>
+    </div>
+
+    <!-- COMPLEX CLEANING -->
+    <div style="flex:1; min-width:280px; background:white; padding:40px 20px; border-radius:10px;">
+      <h3 style="letter-spacing:2px; font-size:16px; color:#0a1931;">COMPLEX CLEANING</h3>
+      <h1 style="font-size:52px; margin:10px 0; color:#0a1931;"><span style="font-size:20px; vertical-align:super;">R</span>490<span style="font-size:20px; vertical-align:super; font-weight:400;">.99</span></h1>
+      
+      <div style="text-align:left; display:inline-block; margin:20px 0; color:#555; line-height:35px;">
+        <div>✅ Seats Washing</div>
+        <div>✅ Vacuum Cleaning</div>
+        <div>✅ Exterior Cleaning</div>
+        <div>✅ Interior Wet Cleaning</div>
+        <div>✅ Window Wiping</div>
+      </div>
+      <br>
+      <a href="bookings.html?service=complex" style="color:#0096ff; text-decoration:none; font-weight:600;">Book Now</a>
+    </div>
+
+  </div>
+</section>
+
+
+<footer class="main-footer">
+  <div class="footer-col">
+    <h3>Get In Touch With Us at Our multiple Branches Across S.A</h3>
+    <p>📍  Midrand, Sandton, Fourways</p>
+    <p>📞 +27 11 234 5678</p>
+    <p>✉️ bubbleboss@carwash.co.za</p>
+  </div>
+
+  <div class="footer-col">
+    <h3>Popular Links</h3>
+    <a href="home.html">About Us</a>
+    <a href="Contact.html">Contact Us</a>
+    <a href="Service.html">Our Service</a>
+    <a href="Price.html">Pricing</a>
+  </div>
+
+  <div class="footer-col">
+    <h3>Useful Links</h3>
+    <a href="#">Terms of use</a>
+    <a href="#">Privacy policy</a>
+    <a href="#">Help</a>
+    <a href="#">FAQs</a>
+  </div>
+
+  <div class="footer-col newsletter-col">
+    <h3>Newsletter</h3>
+    <form id="newsletterForm">
+      <input type="text" id="newsName" placeholder="Name" required>
+      <input type="email" id="newsEmail" placeholder="Email" required>
+      <button type="submit">Submit</button>
+    </form>
+    <p id="newsMessage"></p>
+  </div>
+</footer>
+
+<style>
+.main-footer{
+  background:#0096ff;
+  color:white;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start; 
+  gap:40px;
+  padding:60px 5%;
+  font-family: Arial, sans-serif;
+}
+.footer-col{
+  flex:1;
+  min-width:180px;
+}
+.footer-col h3{
+  margin:0 0 20px 0; 
+  font-size:18px;
+  color:white;
+}
+.footer-col p, .footer-col a{
+  color:white;
+  text-decoration:none;
+  display:block;
+  margin-bottom:10px;
+  font-size:14px;
+}
+.footer-col a:hover{
+  text-decoration:underline;
+  color:#ffeb3b;
+}
+.newsletter-col input{
+  width:100%;
+  padding:12px;
+  margin-bottom:10px;
+  border-radius:5px;
+  border:none;
+  outline:none;
+  box-sizing:border-box;
+}
+.newsletter-col button{
+  width:100%;
+  padding:12px;
+  border-radius:25px;
+  border:none;
+  background:white;
+  color:#0096ff;
+  font-weight:bold;
+  cursor:pointer;
+}
+#newsMessage{
+  display:none;
+  margin-top:10px;
+  font-size:13px;
+}
+</style>
+
+<script>
+document.getElementById('newsletterForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  let name = document.getElementById('newsName').value.trim();
+  let email = document.getElementById('newsEmail').value.trim();
+  let msg = document.getElementById('newsMessage');
+  if(name===""){ alert("Enter name"); return; }
+  if(!email.includes("@")){ alert("Enter valid email with @"); return; }
+  msg.style.display="block";
+  msg.innerText="✅ Thanks "+name+"! Subscribed!";
+  document.getElementById('newsName').value="";
+  document.getElementById('newsEmail').value="";
+  setTimeout(()=>msg.style.display="none",3000);
+});
+</script>
+
+
+
+
+
+<script src="js/site.js"></script>
+</body>
+</html>
